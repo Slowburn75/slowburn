@@ -54,16 +54,16 @@ export default function Resume() {
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Experience */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold text-yellow-400 mb-6">
+          <h3 className="flex items-center text-xl font-semibold text-[#FFDB70] mb-6">
             <Briefcase className="h-6 w-6 mr-2" /> Experience
           </h3>
           <div className="space-y-6">
             {experiences.map((exp, i) => (
               <div
                 key={i}
-                className="relative pl-6 border-l-2 border-yellow-400"
+                className="relative pl-6 border-l-2 border-[#FFDB70]"
               >
-                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-yellow-400"></div>
+                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-[#FFDB70]"></div>
                 <h4 className="text-lg font-semibold text-white">
                   {exp.role}
                 </h4>
@@ -77,16 +77,16 @@ export default function Resume() {
 
         {/* Education */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold text-yellow-400 mb-6">
+          <h3 className="flex items-center text-xl font-semibold text-[#FFDB70] mb-6">
             <GraduationCap className="h-6 w-6 mr-2" /> Education
           </h3>
           <div className="space-y-6">
             {education.map((edu, i) => (
               <div
                 key={i}
-                className="relative pl-6 border-l-2 border-yellow-400"
+                className="relative pl-6 border-l-2 border-[#FFDB70]"
               >
-                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-yellow-400"></div>
+                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-[#FFDB70]"></div>
                 <h4 className="text-lg font-semibold text-white">
                   {edu.degree}
                 </h4>

@@ -22,39 +22,39 @@ export default function Contact() {
         {/* Direct Contact Info */}
         <div className="space-y-6">
           <div className="flex items-center gap-4">
-            <Mail className="w-6 h-6 text-yellow-400" />
+            <Mail className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="mailto:yourname@email.com"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               yourname@email.com
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Phone className="w-6 h-6 text-yellow-400" />
+            <Phone className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="tel:+1234567890"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               +1 234 567 890
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Linkedin className="w-6 h-6 text-yellow-400" />
+            <Linkedin className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="https://linkedin.com/in/yourprofile"
               target="_blank"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               linkedin.com/in/yourprofile
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Github className="w-6 h-6 text-yellow-400" />
+            <Github className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="https://github.com/yourusername"
               target="_blank"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               github.com/yourusername
             </a>
@@ -66,21 +66,21 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Your Name"
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           />
           <textarea
             placeholder="Your Message"
             rows={4}
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           ></textarea>
           <Button
             type="submit"
-            className="w-full bg-yellow-400 text-black hover:bg-yellow-500"
+            className="w-full bg-[#FFDB70] text-black hover:bg-yellow-500"
           >
             Send Message
           </Button>

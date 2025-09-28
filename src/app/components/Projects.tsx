@@ -69,7 +69,7 @@ export default function Portfolio() {
               <Button
                 asChild
                 size="sm"
-                className="bg-yellow-400 text-black hover:bg-yellow-500"
+                className="bg-[#FFDB70] text-black hover:bg-yellow-500"
               >
                 <a href={project.demo} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-1" />

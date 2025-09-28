@@ -43,7 +43,7 @@ export default function Testimonials() {
             className="bg-[#2a2a2a] border border-gray-700 shadow-md rounded-2xl"
           >
             <CardContent className="p-6 flex flex-col gap-4">
-              <Quote className="w-8 h-8 text-yellow-400" />
+              <Quote className="w-8 h-8 text-[#FFDB70]" />
               <p className="text-gray-300 italic">“{t.note}”</p>
               <div className="mt-4">
                 <p className="font-semibold text-white">{t.name}</p>

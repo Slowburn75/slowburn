@@ -24,7 +24,7 @@ export default function Navbar() {
               href={href}
               className={`flex flex-col items-center text-xs transition-colors ${
                 pathname === href
-                  ? "text-yellow-400"
+                  ? "text-[#FFDB70]"
                   : "text-gray-400 hover:text-gray-200"
               }`}
             >

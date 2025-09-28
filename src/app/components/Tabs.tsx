@@ -1,6 +1,6 @@
 "use client";
 
-import { Quote } from "lucide-react";
+import { Quote, Smartphone } from "lucide-react";
 
 const testimonials = [
   {
@@ -19,6 +19,13 @@ const testimonials = [
     note: "A true professional! You have an incredible ability to translate ideas into functional and beautiful solutions.",
   },
 ];
+  const skills = [
+    { name: "Frontend Development", level: 90 },
+    { name: "UI/UX Design", level: 80 },
+    { name: "React & Next.js", level: 85 },
+    { name: "Tailwind CSS", level: 95 },
+    { name: "Node.js & Express", level: 70 },
+  ];
 const experiences = [
     {
       role: "Frontend Developer",
@@ -81,6 +88,7 @@ import { Button } from "@/components/ui/button";
 import { Code2, Code, Palette, Globe, Download } from "lucide-react";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { ExternalLink, Mail, X, Phone, Linkedin, Github } from "lucide-react";
+import { Progress } from "@/components/ui/progress";
 
 
 
@@ -101,7 +109,7 @@ export default function PortfolioTabs() {
 
         {/* Tabs List next to heading */}
         <TabsList className="flex space-x-12 bg-[#212121]">
-          <TabsTrigger value="about" className="px-3 py-1 hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-yellow-400">About</TabsTrigger>
+          <TabsTrigger value="about" className="px-3 py-1 hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>
           <TabsTrigger value="contact" className="px-3 py-1 text-white">Contact</TabsTrigger>
@@ -110,9 +118,12 @@ export default function PortfolioTabs() {
 
       {/* About content */}
       <div className="text-white mb-12">
-        <p className="mt-4 text-gray-400 max-w-2xl">
-          I’m Mohammed Olamide, a passionate Web Developer who loves turning
-          ideas into modern, interactive, and responsive web experiences...
+        <p className="mt-4">
+          I’m a Frontend DEveloper and Web Designer, passionate about crafting seamless digital experiences. With strong background in React, TypeScript, Nextjs and TailWindCSS. I bring ideas to life through intuisive and visually appealing designs.
+        </p>
+        <br />
+        <p>
+            My goal is to build websites that are not only functional and user-friendly, but also engaging and aesthetically striking. I ensure every project reflects the brands identity while delivering a smooth user experience. I've worked on various projects from e-commerce platforms to modern web applications.
         </p>
       </div>
 
@@ -121,44 +132,52 @@ export default function PortfolioTabs() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
               {/* Highlight Cards */}
         <Card className="flex bg-[#2a2a2a] border border-gray-700 border-none shadow-md hover:shadow-lg transition">
-          <CardContent className="p-6">
-            <Code2 className="h-10 w-10 text-yellow-400 mb-4" />
+          <CardContent className="flex gap-4 p-6">
+            <Code2 className="h-10 w-10 text-[#FFDB70] flex-shrink-0" />
+            <div>
             <h3 className="text-lg font-semibold text-white">Frontend Dev</h3>
             <p className="text-sm text-gray-400 mt-2">
               Building responsive, interactive, and user-friendly interfaces
               using React, Next.js, and Tailwind CSS.
-            </p>
+            </p>                
+            </div>
           </CardContent>
         </Card>
 
         <Card className="bg-[#2a2a2a] border border-gray-700 border-none shadow-md hover:shadow-lg transition">
-          <CardContent className="flex flex-col  p-6">
-            <Palette className="h-10 w-10 text-yellow-400 mb-4" />
+          <CardContent className="flex item-start gap-4 p-6">
+            <Palette className="h-10 w-10 text-[#FFDB70] flex-shrink-0" />
+            <div>
             <h3 className="text-lg font-semibold text-white">UI/UX</h3>
             <p className="text-sm text-gray-400 mt-2">
               Crafting sleek designs and seamless user experiences with a focus
               on accessibility and aesthetics.
-            </p>
+            </p>                
+            </div>
           </CardContent>
         </Card>
 
         <Card className="bg-[#2a2a2a] border border-gray-700 border-none shadow-md hover:shadow-lg transition">
-          <CardContent className="flex flex-col p-6">
-            <Globe className="h-10 w-10 text-yellow-400 mb-4" />
+          <CardContent className="flex gap-4 p-6">
+            <Globe className="h-10 w-10 text-[#FFDB70] flex-shrink-0" />
+            <div>
             <h3 className="text-lg font-semibold text-white">Web Solutions</h3>
             <p className="text-sm text-gray-400 mt-2">
               Delivering fast, scalable, and secure solutions for businesses,
               from landing pages to full-stack apps.
-            </p>
+            </p>                
+            </div>
           </CardContent>
         </Card>
                 <Card className="bg-[#2a2a2a] border border-gray-700 border-none shadow-md hover:shadow-lg transition">
-          <CardContent className="flex flex-col p-6">
-            <Code className="h-10 w-10 text-yellow-400 mb-4" />
+          <CardContent className="flex gap-4 p-6">
+            <Smartphone className="h-10 w-10 text-[#FFDB70] flex-shrink-0" />
+            <div>
             <h3 className="text-lg font-semibold text-white">Mobile Apps</h3>
             <p className="text-sm text-gray-400 mt-2">
-              Professional development of applications for ios and Android 
-            </p>
+              Professional development of user friendly applications for IOS and Android devices 
+            </p>                
+            </div>
           </CardContent>
         </Card>
       </div>
@@ -173,7 +192,7 @@ export default function PortfolioTabs() {
                 className="bg-[#2a2a2a] border border-gray-700 shadow-md rounded-2xl"
             >
                 <CardContent className="p-6 flex flex-col gap-4">
-                <Quote className="w-8 h-8 text-yellow-400" />
+                <Quote className="w-8 h-8 text-[#FFDB70]" />
                 <p className="text-gray-300 italic">“{t.note}”</p>
                 <div className="mt-4">
                     <p className="font-semibold text-white">{t.name}</p>
@@ -199,7 +218,7 @@ export default function PortfolioTabs() {
         {/* Tabs List next to heading */}
         <TabsList className="flex space-x-12 bg-[#212121]">
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
-          <TabsTrigger value="resume" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-yellow-400">Resume</TabsTrigger>
+          <TabsTrigger value="resume" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>
           <TabsTrigger value="contact" className="px-3 py-1 text-white">Contact</TabsTrigger>
         </TabsList>
@@ -209,21 +228,21 @@ export default function PortfolioTabs() {
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Experience */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold text-yellow-400 mb-6">
+          <h3 className="flex items-center text-xl font-semibold text-[#FFDB70] mb-6">
             <Briefcase className="h-6 w-6 mr-2" /> Experience
           </h3>
           <div className="space-y-6">
             {experiences.map((exp, i) => (
               <div
                 key={i}
-                className="relative pl-6 border-l-2 border-yellow-400"
+                className="relative pl-6 border-l-2 border-[#FFDB70]"
               >
-                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-yellow-400"></div>
+                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-[#FFDB70]"></div>
                 <h4 className="text-lg font-semibold text-white">
                   {exp.role}
                 </h4>
                 <p className="text-sm text-gray-400">{exp.company}</p>
-                <span className="text-xs text-yellow-400">{exp.period}</span>
+                <span className="text-xs text-[#FFDB70]">{exp.period}</span>
                 <p className="mt-2 text-sm text-gray-300">{exp.description}</p>
               </div>
             ))}
@@ -232,21 +251,21 @@ export default function PortfolioTabs() {
 
         {/* Education */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold text-yellow-400 mb-6">
+          <h3 className="flex items-center text-xl font-semibold text-[#FFDB70] mb-6">
             <GraduationCap className="h-6 w-6 mr-2" /> Education
           </h3>
           <div className="space-y-6">
             {education.map((edu, i) => (
               <div
                 key={i}
-                className="relative pl-6 border-l-2 border-yellow-400"
+                className="relative pl-6 border-l-2 border-[#FFDB70]"
               >
-                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-yellow-400"></div>
+                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-[#FFDB70]"></div>
                 <h4 className="text-lg font-semibold text-white">
                   {edu.degree}
                 </h4>
                 <p className="text-sm text-gray-400">{edu.school}</p>
-                <span className="text-xs text-yellow-400">{edu.period}</span>
+                <span className="text-xs text-[#FFDB70]">{edu.period}</span>
                 <p className="mt-2 text-sm text-gray-300">{edu.description}</p>
               </div>
             ))}
@@ -257,7 +276,7 @@ export default function PortfolioTabs() {
         <div className="mt-6">
           <Button
             asChild
-            className="bg-yellow-400 text-black hover:bg-yellow-500"
+            className="bg-[#FFDB70] text-black hover:bg-yellow-500"
           >
             <a href="/resume.pdf" download>
               <Download className="mr-2 h-4 w-4" />
@@ -265,6 +284,24 @@ export default function PortfolioTabs() {
             </a>
           </Button>
         </div>
+    </section>
+     <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h2 className="text-3xl font-bold text-white mb-8">My Skills</h2>
+
+      <div className="space-y-6 rounded-2xl">
+        {skills.map((skill) => (
+          <div key={skill.name}>
+            <div className="flex rounded-2xl justify-between mb-1">
+              <span className="text-gray-400 font-medium">{skill.name}</span>
+              <span className="text-gray-400 font-medium">{skill.level}%</span>
+            </div>
+            <Progress
+              value={skill.level}
+              className="h-4 rounded-lg text-[#FFDB70] bg-gray-700"
+            />
+          </div>
+        ))}
+      </div>
     </section>
   </TabsContent>
 
@@ -281,7 +318,7 @@ export default function PortfolioTabs() {
         <TabsList className="flex space-x-12 bg-[#212121]">
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
-          <TabsTrigger value="portfolio" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-yellow-400">Portfolio</TabsTrigger>
+          <TabsTrigger value="portfolio" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">Portfolio</TabsTrigger>
           <TabsTrigger value="contact" className="px-3 py-1 text-white">Contact</TabsTrigger>
         </TabsList>
       </div>
@@ -320,7 +357,7 @@ export default function PortfolioTabs() {
               <Button
                 asChild
                 size="sm"
-                className="bg-yellow-400 text-black hover:bg-yellow-500"
+                className="bg-[#FFDB70] text-black hover:bg-yellow-500"
               >
                 <a href={project.demo} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-1" />
@@ -359,7 +396,7 @@ export default function PortfolioTabs() {
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>
-          <TabsTrigger value="contact" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-yellow-400">Contact</TabsTrigger>
+          <TabsTrigger value="contact" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">Contact</TabsTrigger>
         </TabsList>
       </div>
 
@@ -376,49 +413,49 @@ export default function PortfolioTabs() {
         {/* Direct Contact Info */}
         <div className="space-y-6">
           <div className="flex items-center gap-4">
-            <Mail className="w-6 h-6 text-yellow-400" />
+            <Mail className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="mailto:yourname@email.com"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               yourname@email.com
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Phone className="w-6 h-6 text-yellow-400" />
+            <Phone className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="tel:+1234567890"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               +1 234 567 890
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Linkedin className="w-6 h-6 text-yellow-400" />
+            <Linkedin className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="https://linkedin.com/in/yourprofile"
               target="_blank"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               linkedin.com/in/yourprofile
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Github className="w-6 h-6 text-yellow-400" />
+            <Github className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="https://github.com/yourusername"
               target="_blank"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               github.com/yourusername
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <X className="w-6 h-6 text-yellow-400" />
+            <X className="w-6 h-6 text-[#FFDB70]" />
             <a
               href="https://github.com/yourusername"
               target="_blank"
-              className="text-gray-300 hover:text-yellow-400"
+              className="text-gray-300 hover:text-[#FFDB70]"
             >
               No even find me come
             </a>
@@ -430,21 +467,21 @@ export default function PortfolioTabs() {
           <input
             type="text"
             placeholder="Your Name"
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           />
           <textarea
             placeholder="Your Message"
             rows={4}
-            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full p-3 rounded-lg bg-[#1f1f1f] text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#FFDB70]"
           ></textarea>
           <Button
             type="submit"
-            className="w-full bg-yellow-400 text-black hover:bg-yellow-500"
+            className="w-full bg-[#FFDB70] text-black hover:bg-yellow-500"
           >
             Send Message
           </Button>

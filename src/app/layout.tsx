@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
@@ -12,20 +11,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-black text-gray-300 flex">
-        {/* Sidebar */}
-        <aside className="w-[350px] hidden lg:block fixed left-0 top-0 h-screen bg-black p-6">
-          <Sidebar />
-        </aside>
+      <body className="bg-black m-19 text-gray-300 flex flex-col lg:flex-row">
+        {/* Sidebar handles its own responsive behavior */}
+        <Sidebar />
 
         {/* Main Content */}
-        <main className="lg:ml-[350px] bg-black pt-6 top-0 w-full">
-
-
-          {/* Tabs handle all content */}
+        <main className="flex-1 bg-black max-w-full">
           <PortfolioTabs />
-
-          {/* You can optionally keep children if you want dynamic content */}
           {children}
         </main>
       </body>

@@ -24,7 +24,7 @@ export default function About() {
         <div className="mt-6">
           <Button
             asChild
-            className="bg-yellow-400 text-black hover:bg-yellow-500"
+            className="bg-[#FFDB70] text-black hover:bg-yellow-500"
           >
             <a href="/resume.pdf" download>
               <Download className="mr-2 h-4 w-4" />
@@ -38,7 +38,7 @@ export default function About() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Card className="bg-[#2a2a2a] border-none shadow-md hover:shadow-lg transition">
           <CardContent className="flex flex-col items-center text-center p-6">
-            <Code2 className="h-10 w-10 text-yellow-400 mb-4" />
+            <Code2 className="h-10 w-10 text-[#FFDB70] mb-4" />
             <h3 className="text-lg font-semibold text-white">Frontend Dev</h3>
             <p className="text-sm text-gray-400 mt-2">
               Building responsive, interactive, and user-friendly interfaces
@@ -49,7 +49,7 @@ export default function About() {
 
         <Card className="bg-[#2a2a2a] border-none shadow-md hover:shadow-lg transition">
           <CardContent className="flex flex-col items-center text-center p-6">
-            <Palette className="h-10 w-10 text-yellow-400 mb-4" />
+            <Palette className="h-10 w-10 text-[#FFDB70] mb-4" />
             <h3 className="text-lg font-semibold text-white">UI/UX</h3>
             <p className="text-sm text-gray-400 mt-2">
               Crafting sleek designs and seamless user experiences with a focus
@@ -60,7 +60,7 @@ export default function About() {
 
         <Card className="bg-[#2a2a2a] border-none shadow-md hover:shadow-lg transition">
           <CardContent className="flex flex-col items-center text-center p-6">
-            <Globe className="h-10 w-10 text-yellow-400 mb-4" />
+            <Globe className="h-10 w-10 text-[#FFDB70] mb-4" />
             <h3 className="text-lg font-semibold text-white">Web Solutions</h3>
             <p className="text-sm text-gray-400 mt-2">
               Delivering fast, scalable, and secure solutions for businesses,
