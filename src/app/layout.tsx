@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-black m-19 text-gray-300 flex flex-col lg:flex-row">
+      <body className="bg-black m-6 md:m-10 lg:m-19 text-gray-300 flex flex-col md:flex-col lg:flex-row">
         {/* Sidebar handles its own responsive behavior */}
         <Sidebar />
 

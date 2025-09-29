@@ -82,6 +82,7 @@ const experiences = [
       github: "#",
     },
   ];
+  
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Card, CardContent, CardFooter} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -108,7 +109,7 @@ export default function PortfolioTabs() {
         <h1 className="text-3xl font-bold text-white mb-4 sm:mb-0">About Me</h1>
 
         {/* Tabs List next to heading */}
-        <TabsList className="flex space-x-12 bg-[#212121]">
+        <TabsList className="flex space-x-12 bg-[#212121] fixed bottom-0 left-0 w-full justify-around py-3 z-50 lg:static">
           <TabsTrigger value="about" className="px-3 py-1 hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>
@@ -216,7 +217,7 @@ export default function PortfolioTabs() {
         <h1 className="text-3xl font-bold text-white mb-4 sm:mb-0">Resume</h1>
 
         {/* Tabs List next to heading */}
-        <TabsList className="flex space-x-12 bg-[#212121]">
+        <TabsList className="flex space-x-12 bg-[#212121] fixed bottom-0 left-0 w-full justify-around py-3 z-50 lg:static">
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>
@@ -315,7 +316,7 @@ export default function PortfolioTabs() {
         <h1 className="text-3xl font-bold text-white mb-4 sm:mb-0">Portfolio</h1>
 
         {/* Tabs List next to heading */}
-        <TabsList className="flex space-x-12 bg-[#212121]">
+        <TabsList className="flex space-x-12 bg-[#212121] fixed bottom-0 left-0 w-full justify-around py-3 z-50 lg:static">
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1  hover:text-white data-[state=active]:bg-[#212121]  data-[state=active]:text-[#FFDB70]">Portfolio</TabsTrigger>
@@ -392,7 +393,7 @@ export default function PortfolioTabs() {
         <h1 className="text-3xl font-bold text-white mb-4 sm:mb-0">Contact</h1>
 
         {/* Tabs List next to heading */}
-        <TabsList className="flex space-x-12 bg-[#212121]">
+        <TabsList className="flex space-x-12 bg-[#212121] fixed bottom-0 left-0 w-full justify-around py-3 z-50 lg:static">
           <TabsTrigger value="about" className="px-3 py-1 text-white">About</TabsTrigger>
           <TabsTrigger value="resume" className="px-3 py-1 text-white">Resume</TabsTrigger>
           <TabsTrigger value="portfolio" className="px-3 py-1 text-white">Portfolio</TabsTrigger>

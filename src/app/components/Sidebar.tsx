@@ -22,7 +22,7 @@ export default function Sidebar() {
             {/* Top Section */}
             <div className="flex items-center md:items-start md:flex-row lg:flex-col md:text-left lg:text-center gap-4">
                 {/* Avatar */}
-                <Avatar className=" h-20 w-20 md:h-24 md:w-24 lg:h-44 lg:w-44">
+                <Avatar className="h-20 w-20 md:h-24 md:w-24 lg:h-44 lg:w-44 lg:mx-auto">
                     <AvatarImage src="/picture.png" alt="Profile picture" />
                     <AvatarFallback>ME</AvatarFallback>
                 </Avatar>
@@ -57,43 +57,43 @@ export default function Sidebar() {
             >
                 <div className="border-t border-gray-700 my-4 lg:my-6"></div>
 
-<ul className="text-sm
+                <ul className="text-sm
                flex flex-col gap-4       /* default stacked on mobile */
                md:grid md:grid-cols-2 md:gap-6  /* 2 columns on tablet */
                lg:grid-cols-1 lg:gap-4">
-  <li className="flex items-start gap-3">
-    <Mail className="h-4 w-4 text-[#FFDB70]" />
-    <div>
-      <p className="font-medium text-gray-400">EMAIL</p>
-      <a href="mailto:mohammedolamide1@gmail.com" className="hover:underline">
-        mohammedolamide1@gmail.com
-      </a>
-    </div>
-  </li>
-  <li className="flex items-start gap-3">
-    <Phone className="h-4 w-4 text-[#FFDB70]" />
-    <div>
-      <p className="font-medium text-gray-400">PHONE</p>
-      <a href="tel:+2348105524379" className="hover:underline">
-        +(234) 810-552-4379
-      </a>
-    </div>
-  </li>
-  <li className="flex items-start gap-3">
-    <Calendar className="h-4 w-4 text-[#FFDB70]" />
-    <div>
-      <p className="font-medium text-gray-400">BIRTHDAY</p>
-      <time dateTime="1999-03-27">March 27</time>
-    </div>
-  </li>
-  <li className="flex items-start gap-3">
-    <MapPin className="h-4 w-4 text-[#FFDB70]" />
-    <div>
-      <p className="font-medium text-gray-400">LOCATION</p>
-      <address>Beside my woman</address>
-    </div>
-  </li>
-</ul>
+                    <li className="flex items-start gap-3">
+                        <Mail className="h-4 w-4 text-[#FFDB70]" />
+                        <div>
+                            <p className="font-medium text-gray-400">EMAIL</p>
+                            <a href="mailto:mohammedolamide1@gmail.com" className="hover:underline">
+                                mohammedolamide1@gmail.com
+                            </a>
+                        </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <Phone className="h-4 w-4 text-[#FFDB70]" />
+                        <div>
+                            <p className="font-medium text-gray-400">PHONE</p>
+                            <a href="tel:+2348105524379" className="hover:underline">
+                                +(234) 810-552-4379
+                            </a>
+                        </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <Calendar className="h-4 w-4 text-[#FFDB70]" />
+                        <div>
+                            <p className="font-medium text-gray-400">BIRTHDAY</p>
+                            <time dateTime="1999-03-27">March 27</time>
+                        </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <MapPin className="h-4 w-4 text-[#FFDB70]" />
+                        <div>
+                            <p className="font-medium text-gray-400">LOCATION</p>
+                            <address>Beside my woman</address>
+                        </div>
+                    </li>
+                </ul>
 
 
                 <div className="border-t border-gray-700 my-4 lg:my-6"></div>
